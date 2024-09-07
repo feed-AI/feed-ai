@@ -1,6 +1,6 @@
-package com.feed.ai.entity;
+package com.feed.ai.core.entity;
 
-import com.feed.ai.enums.Role;
+import com.feed.ai.core.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

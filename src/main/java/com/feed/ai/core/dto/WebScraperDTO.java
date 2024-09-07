@@ -1,8 +1,8 @@
-package com.feed.ai.dto;
+package com.feed.ai.core.dto;
 
-import com.feed.ai.entity.WebScraper;
-import com.feed.ai.entity.User;
-import com.feed.ai.enums.NewsType;
+import com.feed.ai.core.entity.User;
+import com.feed.ai.core.entity.WebScraper;
+import com.feed.ai.core.enums.NewsType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

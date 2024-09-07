@@ -1,13 +1,10 @@
-package com.feed.ai.entity;
+package com.feed.ai.core.entity;
 
-import com.feed.ai.enums.NewsType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -16,22 +13,18 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "web_scraper")
-public class WebScraper {
+@Table(name = "openai_request")
+public class OpenAiRequest {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String websiteUrl;
+    private String requestData;
 
-    @Enumerated(EnumType.STRING)
-    private NewsType newsType;
-
-    @Column(columnDefinition = "jsonb")
-    @JdbcTypeCode(SqlTypes.JSON)
-    private String scrapedData;
+    @Column(nullable = false)
+    private String responseData;
 
     @Column(nullable = false)
     private LocalDateTime timestamp;

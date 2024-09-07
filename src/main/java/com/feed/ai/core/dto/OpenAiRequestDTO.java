@@ -1,7 +1,7 @@
-package com.feed.ai.dto;
+package com.feed.ai.core.dto;
 
-import com.feed.ai.entity.OpenAiRequest;
-import com.feed.ai.entity.User;
+import com.feed.ai.core.entity.OpenAiRequest;
+import com.feed.ai.core.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
