@@ -1,6 +1,6 @@
 package com.feed.ai.core.telegram.service;
 
-import com.feed.ai.news.exception.MessageFailedException;
+import com.feed.ai.core.exception.MessageFailedException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;

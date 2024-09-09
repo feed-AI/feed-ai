@@ -1,4 +1,4 @@
-package com.feed.ai.news.exception;
+package com.feed.ai.core.exception;
 
 public class MessageFailedException extends RuntimeException{
     public MessageFailedException(String message){

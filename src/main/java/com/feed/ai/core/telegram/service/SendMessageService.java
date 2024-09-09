@@ -1,6 +1,6 @@
 package com.feed.ai.core.telegram.service;
 
-import com.feed.ai.news.exception.MessageFailedException;
+import com.feed.ai.core.exception.MessageFailedException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.retry.annotation.Retryable;
