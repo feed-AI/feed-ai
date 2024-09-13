@@ -30,6 +30,9 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private boolean isVerified;
+
     @Enumerated(EnumType.STRING)
     private Role role;
 
@@ -38,4 +41,7 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<OpenAiRequest> openAiRequests;
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private VerificationToken verificationToken;
 }

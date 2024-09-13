@@ -7,4 +7,5 @@
     <include file="db/changelog/user-table-changelog.xml"/>
     <include file="db/changelog/web-scrapper-table-changelog.xml"/>
     <include file="db/changelog/openai-table-changelog.xml"/>
+    <include file="db/changelog/verification-token-changelog.xml"/>
 </databaseChangeLog>
