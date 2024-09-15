@@ -31,6 +31,17 @@ dependencies {
 	implementation 'org.jsoup:jsoup:1.18.1'
 	implementation 'org.springframework.retry:spring-retry:2.0.8'
 	implementation 'org.telegram:telegrambots:6.9.7.1'
+	implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+
+	implementation 'org.apache.lucene:lucene-core:9.11.1'
+	implementation 'org.apache.lucene:lucene-queryparser:9.11.1'
+	implementation 'org.apache.commons:commons-lang3:3.17.0'
+	implementation 'org.apache.lucene:lucene-analyzers-common:8.11.3'
+
+	implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1'
+
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.12.6'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.12.6'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
